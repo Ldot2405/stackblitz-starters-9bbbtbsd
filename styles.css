@@ -57,7 +57,7 @@ a:hover {
   color: #7a7800;
 }
 
-.player-grid {
+.components-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -67,7 +67,7 @@ a:hover {
   max-width: 800px;
 }
 
-.player {
+.components {
   background-color: #f0f0f0;
   padding: 20px;
   border: 2px solid #2600ff;
@@ -80,13 +80,13 @@ a:hover {
   transition: transform 0.3s, background-color 0.3s;
 }
 
-.player img {
+.components img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.player:hover {
+.components:hover {
   background-color: #c7f9cc;
   transform: scale(1.05);
 }
@@ -127,14 +127,14 @@ a:hover {
   padding: 10px;
 }
 
-.player-info {
+.components-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex: 1;
 }
 
-.player-card {
+.components-card {
   width: 100%;
   max-width: 800px;
   background-color: #f0f0f0;
@@ -145,7 +145,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.nba-images {
+.images {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -154,7 +154,7 @@ a:hover {
   gap: 10px;
 }
 
-.nba-image {
+.image {
   width: 45%;
   min-width: 200px;
   display: flex;
@@ -162,7 +162,7 @@ a:hover {
   align-items: center;
 }
 
-.nba-image img {
+.image img {
   width: 100%;
   height: auto;
   border: 2px solid #007a33;
