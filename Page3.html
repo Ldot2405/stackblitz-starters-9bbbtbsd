@@ -13,7 +13,53 @@
         <a href="index.html">Home</a>
         <a href="page2.html">Finder</a>
         <a href="Page3.html" aria-current="page">Later</a>
+        <a href="Page4.html">Later2</a>
     </nav>
+<main>
+    <h2>Form</h2>
+    <form name="myform" onsubmit="formSubmit(event)">
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" style="width: 250px;">
+        
+        <label for="other">Other Input:</label>
+        <input type="text" name="other" id="other" style="width: 250px;">
+
+        <label>Choose your options:</label>
+        <div style="display: flex; gap: 0.5rem;">
+          <input type="checkbox" name="option1" id="option1">
+          <label for="option1">Option 1</label>
+        </div>
+
+        <div style="display: flex; gap: 0.5rem;">
+          <input type="checkbox" name="option2" id="option2">
+          <label for="option2">Option 2</label>
+        </div>
+
+        <label for="favorite">Choose your a component you want to know more about:</label>
+        <select name="favorite" id="favorite" style="width: 260px;">
+          <option value="GPU">GPU</option>
+          <option value="CPUr">CPU</option>
+          <option value="Motherboard">M.B</option>
+          <option value="Storage">Storaged</option>
+          <option value="Power Supply">Power Supply</option>
+          <option value="RAM">Memory</option>
+        </select>
+
+        <button type="submit">Submit Form</button>
+
+      </form>
+    </main>
+
+    <script>
+      function formSubmit() {
+        const nameInput = document.getElementById("email").value
+        console.log(nameInput)
+        alert("Thanks for submitting, " + nameInput + "!!!!")
+      }
+    </script>
+
+</main>
 </body>
 
 </html>
