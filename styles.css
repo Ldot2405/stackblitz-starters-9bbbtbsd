@@ -175,3 +175,13 @@ form {
   padding: 2rem; 
   }
   
+.imagebox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
+}
+.imagestyle {
+  width:50%;
+  min-width: 200px;
+}
