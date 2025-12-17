@@ -71,6 +71,27 @@
       <p>Give power</p>
     </div>
   </div>
+  <label> 
+    Light Mode <input type="checkbox" onchange="togglelightMode()"> 
+  </label>
+  <script>
+    let lightMode = false;
+
+    function togglelightMode() {
+      console.log("Light mode initially is" + lightMode)
+      if (lightMode == true) {
+        lightMode = false;
+        document.body.style["backgroundColor"] = "#000000";
+        document.body.style["color"] = "#000000"
+      } else {
+
+        lightMode = true;
+        document.body.style["backgroundColor"] = "#FFFFFF";
+        document.body.style["color"] = "#000000"
+      }
+      console.log("Light mode has been changed to" + lightMode)
+    }
+  </script>
 </body>
 </html><div class="footer">
   <div>Contact me</div>
