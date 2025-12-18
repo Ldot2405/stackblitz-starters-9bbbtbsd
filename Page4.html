@@ -10,8 +10,47 @@
 <body>
     <nav>
         <a href="index.html">Home</a>
-        <a href="page2.html">Finder</a>
-        <a href="Page3.html">Later</a>
-        <a href="Page4.html" aria-current="page">Later2</a>
+        <a href="page2.html">Page 2</a>
+        <a href="Page3.html">Page 3</a>
+        <a href="Page4.html" aria-current="page">Page 4</a>
     </nav>
-    <h1>67</h1>
+   <h1>THINGS TO AVIOD!!!</h1>
+   <main>
+    <h3>REMOVE THE PLASTIC UNDER THE HEATSINK OF YOUR CPU FANS</h3>
+    <p> This is a well-known mistake in P.C building, if the piece of plastic is not removed it can cause serious damge to your CPU and the fans won't work porperly.</p>
+    <h3>IMPROPER RAM INSTALLATION</h3>
+    <p>RAM stick can be sometimes hard to install, it requires way more force than what it should. But don't be scared just put it all the way down until you hear the click sound.</p>
+    <h3>IGNORING COMPATIBILITY</h3>
+    <p>Do your research before you anything. You don't want to waste your time buying the wrong parts, spending all your time to build your dream P.C for it not to work. EXAMPLES: Ryzen 7000 series cpus go with AM5 motherboard</p>
+    <h3>USING TOO MUCH OR TOO LITTLE THERMAL PASTE</h3>
+    <p>Putting too much thermal paste on your CPU is not ideal, same for too little. The ideal is to put the enough amount, and make sure you follow some patterns like the crossing, plus sign and many other more to optimize the spread.
+    </p>
+    <h3> DO NOT CHEAP OUT ON YOUR PSU
+
+    </h3>
+    <p>The power supply seems to be the most boring part in the P.C but that doesn't mean you can cheap out on it. It can cause damage to all other parts if you don't pick the correct watts for your P.C</p>
+
+   </main>
+   Light Mode <input type="checkbox" onchange="togglelightMode()"> 
+</label>
+<script>
+  let lightMode = false;
+
+  function togglelightMode() {
+    console.log("Light mode initially is" + lightMode)
+    if (lightMode == true) {
+      lightMode = false;
+      document.body.style["backgroundColor"] = "#000000";
+      document.body.style["color"] = "#FFFFFF";
+      
+      
+    } else {
+
+      lightMode = true;
+      document.body.style["backgroundColor"] = "#FFFFFF";
+      document.body.style["color"] = "#000000"
+      
+    }
+    console.log("Light mode has been changed to" + lightMode)
+  }
+</script>

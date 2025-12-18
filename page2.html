@@ -12,9 +12,9 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="page2.html" aria-current="page">Finder</a>
-    <a href="Page3.html">Later</a>
-    <a href="Page4.html">Later2</a>
+    <a href="page2.html" aria-current="page">Page 2</a>
+    <a href="Page3.html">Page 3</a>
+    <a href="Page4.html">Page 4</a>
   </nav>
 
   <header>
@@ -24,23 +24,60 @@
 
   <main>
     <div class="components-grid">
-      <div class="components">
-        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/chrome_wowvrRZrTt.png?quality=90&strip=all&crop=0,0,100,100" alt="9060xt" width="200%"> 
-        <h3>the AMD Radeon RX 9060 XT delivers excellent 1080p-1440p gaming performance at a much lower price than similar cards while offering more VRAM and strong overall value.
-          $350-$400 depends on the model.
+      <div class="components2">
+        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/chrome_wowvrRZrTt.png?quality=90&strip=all&crop=0,0,100,100" alt="9060xt" width="100%"> 
+        <h3>$350-$400
+        </h3>
+        <h3>AMD Radeon RX 9060XT is a excellent 10800/ good 1440p. With this price, the card outperforms almost every other GPUS within the same price range on the market.
+
         </h3>
       </div>
-      <div class="components">
-        <img src="https://tpucdn.com/cpu-specs/images/chips/3259-front.jpg" alt="7500f" width="100%"> 
-        <h3>The Ryzen 5 7500F is one of the best budget CPUs because it gives you fast, smooth performance for gaming and everyday tasks without costing a lot of money.
+      <div class="components2">
+        <img src="https://tpucdn.com/cpu-specs/images/chips/3259-front.jpg" alt="7500f" width="70%"> 
+        <h3>
           $110-$140
         </h3>
+        <h3> the Ryzen 5 7500F is best budget CPU if you want to get into AM5. But if you live in America, you have to buy this on ALiexpress.</h3>
       </div>
+      <div class="components2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlc4xlj6oERNpCO4aDGjXPPBVXIMAICtVnAA&s" alt="tomahawk" width="70%"> 
+        <h3>
+          ON SALES FOR $130!!
+        </h3>
+        <h3>Great motherboard, Great price. This is a no-brainer for an AM5 motherboard. It comes with all the features you need.</h3>
+      </div>
+      
 
       
       
     </div>
   </main>
+  <h1 style="color: red; text-align: center;">
+    RAM prices are extremely high right now due to massive demand from AI data centers and SSD storage seems to be also going up.
+  </h1>
+  Light Mode <input type="checkbox" onchange="togglelightMode()"> 
+</label>
+<script>
+  let lightMode = false;
+
+  function togglelightMode() {
+    console.log("Light mode initially is" + lightMode)
+    if (lightMode == true) {
+      lightMode = false;
+      document.body.style["backgroundColor"] = "#000000";
+      document.body.style["color"] = "#FFFFFF";
+      
+      
+    } else {
+
+      lightMode = true;
+      document.body.style["backgroundColor"] = "#FFFFFF";
+      document.body.style["color"] = "#000000"
+      
+    }
+    console.log("Light mode has been changed to" + lightMode)
+  }
+</script>
 </body>
 
 </html>

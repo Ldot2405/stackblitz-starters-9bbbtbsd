@@ -11,9 +11,9 @@
 <body>
     <nav>
         <a href="index.html">Home</a>
-        <a href="page2.html">Finder</a>
-        <a href="Page3.html" aria-current="page">Later</a>
-        <a href="Page4.html">Later2</a>
+        <a href="page2.html">Page 2</a>
+        <a href="Page3.html" aria-current="page">Page 3</a>
+        <a href="Page4.html">Page 4</a>
     </nav>
 <main>
     <h2>Form</h2>
@@ -58,7 +58,26 @@
         alert("Thanks for submitting, " + nameInput + "!!!!")
       }
     </script>
+    Light Mode <input type="checkbox" onchange="togglelightMode()"> 
+  </label>
+  <script>
+    let lightMode = false;
 
+    function togglelightMode() {
+      console.log("Light mode initially is" + lightMode)
+      if (lightMode == true) {
+        lightMode = false;
+        document.body.style["backgroundColor"] = "#000000";
+        document.body.style["color"] = "#0000FF"
+      } else {
+
+        lightMode = true;
+        document.body.style["backgroundColor"] = "#FFFFFF";
+        document.body.style["color"] = "#0000FF"
+      }
+      console.log("Light mode has been changed to" + lightMode)
+    }
+  </script>
 </main>
 </body>
 
